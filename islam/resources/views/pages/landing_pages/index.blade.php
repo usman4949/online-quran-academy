@@ -1,9 +1,11 @@
 @extends('home_template.layout')
 
 @section('main_content')
+
+<!-- <marquee behavior="scroll" direction="left" class="text-success">Welcome to our Online Quran Academy</marquee> -->
+
 <!-- Spinner Start -->
-<div id="spinner"
-    class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+<div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
     <div class="spinner-grow text-success" role="status"></div>
 </div>
 <!-- Topbar start -->
@@ -11,24 +13,26 @@
     <div class="container topbar d-none d-lg-block">
         <div class="topbar-inner">
             <div class="row gx-0">
+                <!-- Contact Links -->
                 <div class="col-lg-7 text-start">
                     <div class="h-100 d-inline-flex align-items-center me-4">
-                        <span class="fa fa-phone-alt me-2 text-dark"></span>
-                        <a href="#" class="text-secondary"><span>+92 331 734 4949</span></a>
+                        <span class="fa fa-phone-alt me-2 phone-icon"></span>
+                        <a href="#" class="text-dark"><span>+92 331 734 4949</span></a>
                     </div>
                     <div class="h-100 d-inline-flex align-items-center">
-                        <span class="far fa-envelope me-2 text-dark"></span>
-                        <a href="#" class="text-secondary"><span>khanusman8685@gmail.com</span></a>
+                        <span class="far fa-envelope me-2 envelope-icon"></span>
+                        <a href="#" class="text-dark"><span>khanusman8685@gmail.com</span></a>
                     </div>
                 </div>
+                <!-- Social Media Links -->
                 <div class="col-lg-5 text-end">
                     <div class="h-100 d-inline-flex align-items-center">
-                        <span class="text-body">Follow Us:</span>
-                        <a class="text-dark px-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="text-dark px-2" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="text-body ps-4" href=""><i class="fa fa-lock text-dark me-1"></i> Signup/login</a>
+                        <span class="text-dark">Follow:</span>
+                        <a class="btn-link px-2" href=""><i class="fab fa-facebook"></i></a>
+                        <a class="btn-link px-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn-link px-2" href=""><i class="fab fa-linkedin"></i></a>
+                        <a class="btn-link px-2" href=""><i class="fab fa-instagram"></i></a>
+                        <button class="text-dark ps-4" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-lock me-1"></i> Signup/login</button>
                     </div>
                 </div>
             </div>
@@ -42,6 +46,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars text-success"></span>
             </button>
+            <!-- Navbar links -->
             <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                 <div class="navbar-nav ms-lg-auto mx-xl-auto">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
@@ -62,7 +67,7 @@
                 <div class="hero-header-inner animated zoomIn">
                     <p class="fs-4 text-dark">Welcome To Our Islamic Online Madrasah </p>
                     <h5 class="display-1 mb-5 text-success">Online Quran Academy</h5>
-                    <a href="" class="btn btn-success py-3 px-5">Quick Join Us</a>
+                    <a href="" class="btn btn-success py-3 px-5" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Quick Join Us</a>
                 </div>
             </div>
         </div>
@@ -91,8 +96,7 @@
                 <div class="row g-4 mb-4">
                     <div class="col-md-6">
                         <div class="ps-3 d-flex align-items-center justify-content-start">
-                            <span class="bg-success btn-md-square rounded-circle mt-4 me-2"><i
-                                    class="fa fa-eye text-primary fa-4x mb-5 pb-2"></i></span>
+                            <span><i class="fa fa-eye text-success fa-4x mb-5 pb-2"></i></span>
                             <div class="ms-4">
                                 <h5>Our Vision</h5>
                                 <p>Learn quick Quran class</p>
@@ -101,8 +105,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="ps-3 d-flex align-items-center justify-content-start">
-                            <span class="bg-success btn-md-square rounded-circle mt-4 me-2"><i
-                                    class="fa fa-flag text-primary fa-4x mb-5 pb-2"></i></span>
+                            <span><i class="fa fa-flag text-success fa-4x mb-5 pb-2"></i></span>
                             <div class="ms-4">
                                 <h5>Our Mission</h5>
                                 <p>ISO certified Islamic Institute</p>
@@ -137,14 +140,14 @@
         <div class="container text-center bg-success py-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="row g-4 align-items-center">
                 <div class="col-lg-2">
-                    <i class="fa fa-mosque fa-5x text-primary"></i>
+                    <i class="fa fa-mosque fa-5x text-light"></i>
                 </div>
                 <div class="col-lg-7 text-center text-lg-start">
                     <h1 class="mb-0 text-light">Every Muslim Needs To Realise The Importance Of The "Pillar" Of
                         Islam</h1>
                 </div>
                 <div class="col-lg-3">
-                    <a href="" class="btn btn-primary py-2 px-4">Learn More</a>
+                    <a href="" class="btn btn-light py-2 px-4">Learn More</a>
                 </div>
             </div>
         </div>
@@ -257,7 +260,7 @@
         <div class="row g-4 event-item wow fadeIn" data-wow-delay="0.3s">
             <div class="col-12 col-lg-4">
                 <div class="overflow-hidden mb-5">
-                    <img src="{{ asset('assets/images/events-2.jpg') }}"  class="img-fluid w-100" alt="">
+                    <img src="{{ asset('assets/images/events-2.jpg') }}" class="img-fluid w-100" alt="">
                 </div>
             </div>
             <div class="col-9 col-lg-6 pb-5">
@@ -284,14 +287,14 @@
             </div>
             <div class="col-12 col-lg-4">
                 <div class="overflow-hidden mb-5">
-                    <img src="{{ asset('assets/images/events-3.jpg') }}"  class="img-fluid w-100" alt="">
+                    <img src="{{ asset('assets/images/events-3.jpg') }}" class="img-fluid w-100" alt="">
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Sermon Start -->
-<div class="container-fluid sermon py-5">
+<div class="container-fluid about py-5">
     <div class="container py-5">
         <div class="text-center mx-auto mb-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
             <p class="fs-5 text-uppercase text-success">WHY TO CHOOSE US</p>
@@ -306,10 +309,8 @@
                     <div class="p-4">
                         <div class="sermon-meta d-flex justify-content-between pb-2">
                             <div class="">
-                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">13 Nov 2023</small></a>
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href=""
-                                        class="text-muted">Admin</small></a>
+                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href="" class="text-muted me-2">13 Nov 2023</small></a>
+                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted">Admin</small></a>
                             </div>
                             <div class="">
                                 <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
@@ -333,10 +334,8 @@
                     <div class="p-4">
                         <div class="sermon-meta d-flex justify-content-between pb-2">
                             <div class="">
-                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">13 Nov 2023</small></a>
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href=""
-                                        class="text-muted">Admin</small></a>
+                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href="" class="text-muted me-2">13 Nov 2023</small></a>
+                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted">Admin</small></a>
                             </div>
                             <div class="">
                                 <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
@@ -360,10 +359,8 @@
                     <div class="p-4">
                         <div class="sermon-meta d-flex justify-content-between pb-2">
                             <div class="">
-                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">13 Nov 2023</small></a>
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href=""
-                                        class="text-muted">Admin</small></a>
+                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href="" class="text-muted me-2">13 Nov 2023</small></a>
+                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted">Admin</small></a>
                             </div>
                             <div class="">
                                 <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
@@ -387,11 +384,12 @@
                 <i class="fa fa-mosque fa-5x text-white"></i>
             </div>
             <div class="col-lg-7 text-center text-lg-start">
-                <h1 class="mb-0">Do not let Shaitan delay you from starting
+                <h1 class="mb-0 text-light">Do not let Shaitan delay you from starting
                     to learn your deen.</h1>
             </div>
             <div class="col-lg-3">
                 <a href="" class="btn btn-light py-2 px-4">Quick Start Now</a>
+                <!-- <a href="" class="btn btn-light py-2 px-4">Quick Start Now</a> -->
             </div>
         </div>
     </div>
@@ -414,8 +412,7 @@
                             <div class="">
                                 <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted me-2">By
                                         Admin</small></a>
-                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">12 Comments</small></a>
+                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href="" class="text-muted me-2">12 Comments</small></a>
                             </div>
                             <div class="">
                                 <a href=""><i class="fas fa-bookmark text-muted"></i></a>
@@ -441,8 +438,7 @@
                             <div class="">
                                 <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted me-2">By
                                         Admin</small></a>
-                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">12 Comments</small></a>
+                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href="" class="text-muted me-2">12 Comments</small></a>
                             </div>
                             <div class="">
                                 <a href=""><i class="fas fa-bookmark text-muted"></i></a>
@@ -468,8 +464,7 @@
                             <div class="">
                                 <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted me-2">By
                                         Admin</small></a>
-                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">12 Comments</small></a>
+                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href="" class="text-muted me-2">12 Comments</small></a>
                             </div>
                             <div class="">
                                 <a href=""><i class="fas fa-bookmark text-muted"></i></a>
@@ -523,14 +518,10 @@
                                     <h5 class="mb-0">Mustafa Kamal</h5>
                                     <p class="text-dark">Imam</p>
                                     <div class="team-icon d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square me-2"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square"><i
-                                                class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="btn btn-success btn-sm-square me-2"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="btn btn-success btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -544,14 +535,10 @@
                                     <h5 class="mb-0">Nahiyan Momen</h5>
                                     <p class="text-dark">Teacher</p>
                                     <div class="team-icon d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square me-2"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square"><i
-                                                class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="btn btn-success btn-sm-square me-2"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="btn btn-success btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -565,14 +552,10 @@
                                     <h5 class="mb-0">Asfaque Ali</h5>
                                     <p class="text-dark">Volunteer</p>
                                     <div class="team-icon d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square me-2"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square"><i
-                                                class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="btn btn-success btn-sm-square me-2"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="btn btn-success btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -595,8 +578,7 @@
                 <div class="d-flex mb-3">
                     <div class="position-relative">
                         <img src="img/testimonial-1.jpg" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-success rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
+                        <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
                     </div>
@@ -621,8 +603,7 @@
                 <div class="d-flex mb-3">
                     <div class="position-relative">
                         <img src="img/testimonial-2.jpg" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-success rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
+                        <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
                     </div>
@@ -647,8 +628,7 @@
                 <div class="d-flex mb-3">
                     <div class="position-relative">
                         <img src="img/testimonial-3.jpg" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-success rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
+                        <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
                     </div>
@@ -673,8 +653,7 @@
                 <div class="d-flex mb-3">
                     <div class="position-relative">
                         <img src="img/testimonial-4.jpg" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-success rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
+                        <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
                     </div>
@@ -693,6 +672,140 @@
                     </div>
                     <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do tempor ut labore et dolore
                         magna aliqua. Ut enim ad minim quis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Modal Close Button -->
+            <div class="modal-header d-flex justify-content-end">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class=" modal-body">
+                <!-- Login and Register Buttons-->
+                <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active bg-success" id="tab-login" data-mdb-pill-init href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Log in</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="tab-register" data-mdb-pill-init href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Sign up</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <!-- Login Form -->
+                    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                        <form>
+                            <!-- Social Media Links -->
+                            <div class="text-center mb-3">
+                                <p>Sign up with:</p>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-facebook"></i>
+                                </button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                            <p class="text-center">or:</p>
+                            <!-- Email input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="loginName">Email or username</label>
+                                <input type="email" id="loginName" class="form-control" />
+                            </div>
+                            <!-- Password input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="loginPassword">Password</label>
+                                <input type="password" id="loginPassword" class="form-control" />
+                            </div>
+                            <!-- Remember and forget password layout -->
+                            <div class="row mb-4">
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                    <div class="form-check mb-3 mb-md-0">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                        <label class="form-check-label" for="loginCheck"> Remember me </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <!-- Simple link -->
+                                    <a href="#!">Forgot password?</a>
+                                </div>
+                            </div>
+                            <!-- Submit button -->
+                            <div class="text-center">
+                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-block mb-4">Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Signup Form -->
+                    <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                        <form>
+                            <!-- Social Media Links -->
+                            <div class="text-center mb-3">
+                                <p>Sign up with:</p>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-facebook"></i>
+                                </button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                            <p class="text-center">or:</p>
+                            <!-- Name input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="registerName">Name</label>
+                                <input type="text" id="registerName" class="form-control" />
+                            </div>
+                            <!-- Username input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="registerUsername">Username</label>
+                                <input type="text" id="registerUsername" class="form-control" />
+                            </div>
+                            <!-- Email input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="registerEmail">Email</label>
+                                <input type="email" id="registerEmail" class="form-control" />
+                            </div>
+                            <!-- Password input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="registerPassword">Password</label>
+                                <input type="password" id="registerPassword" class="form-control" />
+                            </div>
+                            <!-- Repeat Password input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                                <input type="password" id="registerRepeatPassword" class="form-control" />
+                            </div>
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked aria-describedby="registerCheckHelpText" />
+                                <label class="form-check-label" for="registerCheck">
+                                    I have read and agree to the terms
+                                </label>
+                            </div>
+                            <!-- Submit button -->
+                            <div class="text-center">
+                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-block mb-4">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

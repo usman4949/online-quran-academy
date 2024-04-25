@@ -1,3 +1,75 @@
+.close {
+    color: black !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.close span {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.form-control {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #6a9972 !important;
+    outline: none;
+    box-shadow: 0 0 10px rgba(106, 153, 114, 0.6);
+}
+
+button.text-dark.ps-4 {
+    border: none;
+    background-color: transparent;
+}
+
+.phone-icon {
+    color: #750808;
+}
+
+.envelope-icon {
+    color: #051e8a;
+}
+
+.btn-link .fab.fa-facebook {
+    color: #0751f1;
+}
+
+.btn-link .fab.fa-google {
+    color: #db4437;
+}
+
+.btn-link .fab.fa-twitter {
+    color: #1da1f2;
+}
+
+.btn-link .fab.fa-github {
+    color: #24292e;
+}
+
+.btn-link .fab.fa-linkedin {
+    color: #0077b5;
+}
+
+.btn-link .fab.fa-instagram {
+    color: #bc2a8d;
+}
+
+.fa.fa-lock {
+    color: #808080;
+}
+
+.btn-link .fab:hover {
+    transform: scale(2.2);
+    transition: transform 0.5s ease;
+}
+
+.btn-link .fab {
+    transition: transform 0.6s ease;
+}
 
 /*** Spinner Start ***/
 
@@ -39,12 +111,22 @@
     color: var(--bs-success);
 }
 
-h1, h2, h3, .h1, .h2, .h3 {
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
     font-weight: 700 !important;
     font-family: 'Open', sans-serif !important;
 }
 
-h4, h5, h6, .h4, .h5, .h6 {
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
     font-weight: 600 !important;
     font-family: 'Open', sans-serif !important;
 }
@@ -53,7 +135,6 @@ h4, h5, h6, .h4, .h5, .h6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
-
 
 /*** Button Start ***/
 
@@ -104,8 +185,8 @@ h4, h5, h6, .h4, .h5, .h6 {
     background: var(--bs-success) !important;
     border-color: var(--bs-success) !important;
 }
-/*** Button End ***/
 
+/*** Button End ***/
 
 /*** Topbar Start ***/
 .topbar .topbar-inner {
@@ -123,8 +204,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 .topbar a i:hover {
     color: var(--bs-success) !important;
 }
-/*** Topbar End ***/
 
+/*** Topbar End ***/
 
 /*** Navbar Start ***/
 .fixed-top {
@@ -191,8 +272,8 @@ h4, h5, h6, .h4, .h5, .h6 {
     border: 2px solid var(--bs-success) !important;
     box-shadow: none !important;
 }
-/*** Navbar End ***/
 
+/*** Navbar End ***/
 
 /*** Hero Header ***/
 .hero-header {
@@ -217,8 +298,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 .hero-header .breadcrumb-item {
     font-size: 18px;
 }
-/*** Hero Header ***/
 
+/*** Hero Header ***/
 
 /*** About Start ***/
 .about a.btn.btn-light:hover {
@@ -226,8 +307,8 @@ h4, h5, h6, .h4, .h5, .h6 {
     color: var(--bs-success) !important;
     border: 0;
 }
-/*** About End ***/
 
+/*** About End ***/
 
 /*** Activities Start ***/
 .activities .activities-item {
@@ -253,9 +334,8 @@ h4, h5, h6, .h4, .h5, .h6 {
     background: var(--bs-dark) !important;
     color: var(--bs-success) !important;
 }
+
 /*** Activities End ***/
-
-
 /*** Events Start ***/
 .event-item img {
     transition: 0.5s;
@@ -275,8 +355,8 @@ h4, h5, h6, .h4, .h5, .h6 {
     color: var(--bs-success);
     opacity: 0.5s;
 }
-/*** Events End ***/
 
+/*** Events End ***/
 
 /*** Sermon Start ***/
 .sermon .sermon-item {
@@ -301,8 +381,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 .sermon-item .sermon-meta a i:hover {
     color: var(--bs-success) !important;
 }
-/*** Sermon End ***/
 
+/*** Sermon End ***/
 
 /*** Blog Start ***/
 .blog-item {
@@ -327,8 +407,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 .blog-item .blog-meta a i:hover {
     color: var(--bs-success) !important;
 }
-/*** Blog End ***/
 
+/*** Blog End ***/
 
 /*** Team Start ***/
 .team .team-img {
@@ -359,26 +439,26 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .team .team-item .team-content {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
-   padding: 15px;
-   transform: translateX(-50%, -50%);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   opacity: 0;
-   transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    transform: translateX(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .team .team-item:hover .team-content {
     opacity: 1;
     background: rgba(241, 193, 82, .7);
 }
-/*** Team End ***/
 
+/*** Team End ***/
 
 /*** testimonial Start ***/
 .testimonial-item {
@@ -428,8 +508,8 @@ h4, h5, h6, .h4, .h5, .h6 {
     background: var(--bs-dark) !important;
     color: var(--bs-success) !important;
 }
-/*** testimonial End ***/
 
+/*** testimonial End ***/
 
 /*** Footer Start ***/
 .footer {
@@ -472,4 +552,5 @@ h4, h5, h6, .h4, .h5, .h6 {
 .footer-item a i:hover {
     color: var(--bs-success) !important;
 }
+
 /*** Footer End ***/
