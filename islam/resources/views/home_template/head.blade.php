@@ -25,9 +25,11 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
+    <link href="assets/css/signup.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- jQuery -->
+    <script src="assets/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>

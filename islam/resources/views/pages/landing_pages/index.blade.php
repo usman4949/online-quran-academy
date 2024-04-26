@@ -32,7 +32,7 @@
                         <a class="btn-link px-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn-link px-2" href=""><i class="fab fa-linkedin"></i></a>
                         <a class="btn-link px-2" href=""><i class="fab fa-instagram"></i></a>
-                        <button class="text-dark ps-4" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-lock me-1"></i> Signup/login</button>
+                        <a href="{{ route('signup') }}" class="text-dark ps-4"><i class="fa fa-lock me-1"></i> User login</a>
                     </div>
                 </div>
             </div>
@@ -677,6 +677,7 @@
         </div>
     </div>
 </div>
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -750,7 +751,8 @@
                     </div>
                     <!-- Signup Form -->
                     <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-                        <form>
+                        <form id="signupForm" action="{{ url('signup') }}" method="post" enctype="multipart/form-data">
+                            @csrf
                             <!-- Social Media Links -->
                             <div class="text-center mb-3">
                                 <p>Sign up with:</p>
@@ -768,30 +770,45 @@
                                 </button>
                             </div>
                             <p class="text-center">or:</p>
-                            <!-- Name input -->
-                            <div data-mdb-input-init class="form-outline mb-4">
-                                <label class="form-label" for="registerName">Name</label>
-                                <input type="text" id="registerName" class="form-control" />
-                            </div>
                             <!-- Username input -->
                             <div data-mdb-input-init class="form-outline mb-4">
                                 <label class="form-label" for="registerUsername">Username</label>
-                                <input type="text" id="registerUsername" class="form-control" />
+                                <input type="text" id="registerUsername" name="username" class="form-control" />
+                                @error('username')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
                             </div>
                             <!-- Email input -->
                             <div data-mdb-input-init class="form-outline mb-4">
                                 <label class="form-label" for="registerEmail">Email</label>
-                                <input type="email" id="registerEmail" class="form-control" />
+                                <input type="email" id="registerEmail" name="email" class="form-control" />
+                                @error('email')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
                             </div>
                             <!-- Password input -->
                             <div data-mdb-input-init class="form-outline mb-4">
                                 <label class="form-label" for="registerPassword">Password</label>
-                                <input type="password" id="registerPassword" class="form-control" />
+                                <input type="password" id="registerPassword" name="password" class="form-control" />
+                                @error('password')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
                             </div>
                             <!-- Repeat Password input -->
                             <div data-mdb-input-init class="form-outline mb-4">
                                 <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-                                <input type="password" id="registerRepeatPassword" class="form-control" />
+                                <input type="password" id="registerRepeatPassword" name="confirmpassword" class="form-control" />
+                                @error('confirmpassword')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <!-- Phone Number input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="registerName">Phone No:</label>
+                                <input type="text" id="registerName" name="phone_number" class="form-control" />
+                                @error('phone_number')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
                             </div>
                             <!-- Checkbox -->
                             <div class="form-check d-flex justify-content-center mb-4">
@@ -800,6 +817,8 @@
                                     I have read and agree to the terms
                                 </label>
                             </div>
+                            <!-- User Role Id -->
+                            <input type="hidden" name="role_id" value="1">
                             <!-- Submit button -->
                             <div class="text-center">
                                 <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-block mb-4">Sign up</button>
