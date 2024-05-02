@@ -1,105 +1,52 @@
-<nav class="navbar navbar-expand-lg navbar-light py-0">
-    <a class="navbar-brand brand_color py-0" href="<?= base_url('/') ?>">
-        <img src="<?= base_url('assets/images/svg/dubai_safai_logo.svg') ?>" class="img-fluid" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link top_nav_link me-4" href="<?= base_url('/') ?>">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link top_nav_link me-4" href="<?= base_url('/tours') ?>">Tours</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link top_nav_link me-4" href="<?= base_url('/about') ?>">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link top_nav_link me-4" href="<?= base_url('/testimonials') ?>">Reviews</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link top_nav_link me-4" href="<?= base_url('/privacy_policy') ?>">Policy</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link top_nav_link me-4" href="<?= base_url('/faq') ?>">FAQs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link top_nav_link me-4" href="<?= base_url('/contact') ?>">Contact Us</a>
-            </li>
-        </ul>
-
-
-
-        <?php
-        $isUserLoggedIn = session('isUserLoggedIn');
-        if ($isUserLoggedIn) {
-            $name = session('username');
-            $user_role = session('user_role');
-        ?>
-            <a class="nav-link d-flex justify-content-end align-items-center pe-0" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <h6 class="logged_in_user_name ms-2 mb-0"><?php echo $name ?></h6>
-                <img src="<?= base_url('assets/images/svg/arrow_down_dropdown.svg') ?>" class="ms-3 mt-1" width="13" alt="">
-            </a>
-
-            <ul class="dropdown-menu dropdown-menu-lg-end my_dropdown_menu_mainpage" aria-labelledby="navbarDarkDropdownMenuLink">
-
-                <li>
-                    <?php if ($user_role == 1) { ?>
-                        <a class="dropdown-item text_medium px-1" href="<?= base_url('/admin/dashboard') ?>">
-                            <img src="<?= base_url('assets/images/svg/panel_svg/dashboard.svg') ?>" class="me-2" alt="">
-                            Dashboard
-                        </a>
-                    <?php } else { ?>
-                        <a class="dropdown-item text_medium px-1" href="<?= base_url('/user/dashboard') ?>">
-                            <img src="<?= base_url('assets/images/svg/panel_svg/dashboard.svg') ?>" class="me-2" alt="">
-                            Dashboard
-                        </a>
-                    <?php } ?>
-                    <a class="dropdown-item text_medium px-1" href="<?= base_url('/logout') ?>">
-                        <img src="<?= base_url('assets/images/svg/panel_svg/logout.svg') ?>" class="me-2" alt="">
-                        Logout
-                    </a>
-                </li>
-            </ul>
-        <?php } else { ?>
-            <form class="d-flex">
-                <a href="<?= base_url('/login') ?>" class="btn btn_primary p-2 py-1 me-2">Login</a>
-                <a href="<?= base_url('/sign_up') ?>" class="btn btn_primary p-2 py-1">Sign Up</a>
-            </form>
-        <?php } ?>
-        <?php
-         $isUserLoggedIn = session('isUserLoggedIn');
-         if ($isUserLoggedIn) {
-             $userrole= $user_role;
-        }else{
-            $userrole=0;
-        }
-        if($userrole!=1){
-        ?>
-            <a href="<?= base_url('/cart_detail') ?>" class="btn footer_socail_icon text-decoration-none ms-3 position-relative">
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg_orange fw-light  text-white">
-
-                    <?php
-                    if (isset($_COOKIE['cart_cookie'])) {
-                        $cart_cookie = $_COOKIE['cart_cookie'];
-                        $cart_detail = json_decode($cart_cookie);
-                        $total_items = count($cart_detail);
-
-                        if (intval($total_items) < 10) {
-                            $show_total = $total_items;
-                        } else {
-                            $show_total = '9+';
-                        } ?>
-                        <?= $show_total ?>
-                    <?php } else { ?>
-                        0
-                    <?php } ?>
-                    <span class="visually-hidden">unread messages</span>
-                </span>
-                <img src="<?= base_url('assets/images/svg/panel_svg/cart_icon.svg') ?>" width="16" alt="">
-            </a>
-        <?php } ?>
+<!-- Topbar start -->
+<div class="container-fluid fixed-top">
+    <div class="container topbar d-none d-lg-block">
+        <div class="topbar-inner">
+            <div class="row gx-0">
+                <!-- Contact Links -->
+                <div class="col-lg-7 text-start">
+                    <div class="h-100 d-inline-flex align-items-center me-4">
+                        <span class="fa fa-phone-alt me-2 phone-icon"></span>
+                        <a href="#" class="text-dark"><span>+92 331 734 4949</span></a>
+                    </div>
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <span class="far fa-envelope me-2 envelope-icon"></span>
+                        <a href="#" class="text-dark"><span>khanusman8685@gmail.com</span></a>
+                    </div>
+                </div>
+                <!-- Social Media Links -->
+                <div class="col-lg-5 text-end">
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <span class="text-dark">Follow:</span>
+                        <a class="btn-link px-2" href=""><i class="fab fa-facebook"></i></a>
+                        <a class="btn-link px-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn-link px-2" href=""><i class="fab fa-linkedin"></i></a>
+                        <a class="btn-link px-2" href=""><i class="fab fa-instagram"></i></a>
+                        <a href="{{ route('signup') }}" class="text-dark ps-4"><i class="fa fa-lock me-1"></i> User login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</nav>
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-3">
+            <a href="{{url('/')}}" class="navbar-brand">
+                <h1 class="mb-0">Online<span class="text-success">Madrasah</span> </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-success"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                <div class="navbar-nav ms-lg-auto mx-xl-auto">
+                    <a href="{{ url('/') }}" class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+                    <a href="{{ url('cources') }}" class="nav-item nav-link {{ request()->is('cources') ? 'active' : '' }}">Courses</a>
+                    <a href="{{ url('teachers') }}" class="nav-item nav-link {{ request()->is('teachers') ? 'active' : '' }}">Teachers</a>
+                    <a href="{{ url('/contact') }}" class="nav-item nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact</a>
+                    <a href="{{ url('/read_quran') }}" class="nav-item nav-link {{ request()->is('read_quran') ? 'active' : '' }}">Read Quran</a>
+                </div>
+                <a href="" class="btn btn-success py-2 px-4 d-none d-xl-inline-block">Donate</a>
+            </div>
+        </nav>
+    </div>
+</div>

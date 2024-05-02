@@ -8,57 +8,7 @@
 <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
     <div class="spinner-grow text-success" role="status"></div>
 </div>
-<!-- Topbar start -->
-<div class="container-fluid fixed-top">
-    <div class="container topbar d-none d-lg-block">
-        <div class="topbar-inner">
-            <div class="row gx-0">
-                <!-- Contact Links -->
-                <div class="col-lg-7 text-start">
-                    <div class="h-100 d-inline-flex align-items-center me-4">
-                        <span class="fa fa-phone-alt me-2 phone-icon"></span>
-                        <a href="#" class="text-dark"><span>+92 331 734 4949</span></a>
-                    </div>
-                    <div class="h-100 d-inline-flex align-items-center">
-                        <span class="far fa-envelope me-2 envelope-icon"></span>
-                        <a href="#" class="text-dark"><span>khanusman8685@gmail.com</span></a>
-                    </div>
-                </div>
-                <!-- Social Media Links -->
-                <div class="col-lg-5 text-end">
-                    <div class="h-100 d-inline-flex align-items-center">
-                        <span class="text-dark">Follow:</span>
-                        <a class="btn-link px-2" href=""><i class="fab fa-facebook"></i></a>
-                        <a class="btn-link px-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn-link px-2" href=""><i class="fab fa-linkedin"></i></a>
-                        <a class="btn-link px-2" href=""><i class="fab fa-instagram"></i></a>
-                        <a href="{{ route('signup') }}" class="text-dark ps-4"><i class="fa fa-lock me-1"></i> User login</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <nav class="navbar navbar-light navbar-expand-lg py-3">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="mb-0">Online<span class="text-success">Madrasah</span> </h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars text-success"></span>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                <div class="navbar-nav ms-lg-auto mx-xl-auto">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">Cources</a>
-                    <a href="activity.html" class="nav-item nav-link">Teachers</a>
-                    <a href="event.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="" class="btn btn-success py-2 px-4 d-none d-xl-inline-block">Donate</a>
-            </div>
-        </nav>
-    </div>
-</div>
+
 <!-- Hero Start -->
 <div class="container-fluid hero-header">
     <div class="container">
@@ -84,11 +34,11 @@
             <div class="col-xl-6">
                 <div class="row g-4">
                     <div class="col-6">
-                        <img src="{{ asset('assets/images/about-1.jpg') }}" class="img-fluid h-100 wow zoomIn" data-wow-delay="0.1s" alt="">
+                        <img src="{{ asset('assets/images/about-1.jpg') }}" class="img-fluid h-100 wow zoomIn" data-wow-delay="0.1s" alt="image">
                     </div>
                     <div class="col-6">
-                        <img src="{{ asset('assets/images/about-2.jpg') }}" class="img-fluid pb-3 wow zoomIn" data-wow-delay="0.1s" alt="">
-                        <img src="{{ asset('assets/images/about-3.jpg') }}" class="img-fluid pt-3 wow zoomIn" data-wow-delay="0.1s" alt="">
+                        <img src="{{ asset('assets/images/about-2.jpg') }}" class="img-fluid pb-3 wow zoomIn" data-wow-delay="0.1s" alt="image">
+                        <img src="{{ asset('assets/images/about-3.jpg') }}" class="img-fluid pt-3 wow zoomIn" data-wow-delay="0.1s" alt="image">
                     </div>
                 </div>
             </div>
@@ -116,7 +66,7 @@
                 <div class="bg-light p-3 mb-4">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-3">
-                            <img src="img/about-child.jpg" class="img-fluid rounded-circle" alt="">
+                            <img src="img/about-child.jpg" class="img-fluid rounded-circle" alt="image">
                         </div>
                         <div class="col-9">
                             <p class="mb-0">We welcome our users to Online Quran teaching services where we are
@@ -253,14 +203,14 @@
             </div>
             <div class="col-lg-6">
                 <div class="overflow-hidden mb-5">
-                    <img src="{{ asset('assets/images/events-1.jpg') }}" class="img-fluid w-50" alt="">
+                    <img src="{{ asset('assets/images/events-1.jpg') }}" class="img-fluid w-50" alt="image">
                 </div>
             </div>
         </div>
         <div class="row g-4 event-item wow fadeIn" data-wow-delay="0.3s">
             <div class="col-12 col-lg-4">
                 <div class="overflow-hidden mb-5">
-                    <img src="{{ asset('assets/images/events-2.jpg') }}" class="img-fluid w-100" alt="">
+                    <img src="{{ asset('assets/images/events-2.jpg') }}" class="img-fluid w-100" alt="image">
                 </div>
             </div>
             <div class="col-9 col-lg-6 pb-5">
@@ -287,7 +237,7 @@
             </div>
             <div class="col-12 col-lg-4">
                 <div class="overflow-hidden mb-5">
-                    <img src="{{ asset('assets/images/events-3.jpg') }}" class="img-fluid w-100" alt="">
+                    <img src="{{ asset('assets/images/events-3.jpg') }}" class="img-fluid w-100" alt="image">
                 </div>
             </div>
         </div>
@@ -304,75 +254,33 @@
             <div class="col-lg-6 col-xl-4">
                 <div class="sermon-item wow fadeIn" data-wow-delay="0.1s">
                     <div class="overflow-hidden p-4 pb-0">
-                        <img src="img/sermon-1.jpg" class="img-fluid w-100" alt="">
+                        <img src="{{ asset('assets/images/icons/expert.png') }}" style="max-width: 50%;" alt="image">
                     </div>
                     <div class="p-4">
-                        <div class="sermon-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href="" class="text-muted me-2">13 Nov 2023</small></a>
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted">Admin</small></a>
-                            </div>
-                            <div class="">
-                                <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-headphones text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-file-alt text-muted"></i></a>
-                                <a href="" class=""><i class="fas fa-image text-muted"></i></a>
-                            </div>
-                        </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">How to get closer to Allah</a>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
+                        <h4 class="m-3">Expert Instructors</h4>
+                        <p class="mb-0">Learn from knowledgeable and experienced scholars dedicated to providing authentic Islamic education.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xl-4">
                 <div class="sermon-item wow fadeIn" data-wow-delay="0.3s">
                     <div class="overflow-hidden p-4 pb-0">
-                        <img src="img/sermon-2.jpg" class="img-fluid w-100" alt="">
+                        <img src="{{ asset('assets/images/icons/resume.png') }}" style="max-width: 50%;" alt="image">
                     </div>
                     <div class="p-4">
-                        <div class="sermon-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href="" class="text-muted me-2">13 Nov 2023</small></a>
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted">Admin</small></a>
-                            </div>
-                            <div class="">
-                                <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-headphones text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-file-alt text-muted"></i></a>
-                                <a href="" class=""><i class="fas fa-image text-muted"></i></a>
-                            </div>
-                        </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">Importance of Hajj in Islam</a>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
+                        <h4 class="m-3">Comprehensive Curriculum</h4>
+                        <p class="mb-0">Explore a comprehensive curriculum covering diverse topics, from Quranic studies to Islamic jurisprudence.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xl-4">
                 <div class="sermon-item wow fadeIn" data-wow-delay="0.5s">
                     <div class="overflow-hidden p-4 pb-0">
-                        <img src="img/sermon-3.jpg" class="img-fluid w-100" alt="">
+                        <img src="{{ asset('assets/images/icons/community-approach.png') }}" style="max-width: 50%;" alt="image">
                     </div>
                     <div class="p-4">
-                        <div class="sermon-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href="" class="text-muted me-2">13 Nov 2023</small></a>
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted">Admin</small></a>
-                            </div>
-                            <div class="">
-                                <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-headphones text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-file-alt text-muted"></i></a>
-                                <a href="" class=""><i class="fas fa-image text-muted"></i></a>
-                            </div>
-                        </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">Importance of “Piller” of Islam</a>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
+                        <h4 class="m-3">Community-Centric Approach</h4>
+                        <p class="mb-0">Join a supportive learning community fostering spiritual growth and mutual respect.</p>
                     </div>
                 </div>
             </div>
@@ -394,93 +302,6 @@
         </div>
     </div>
 </div>
-<!-- Blog Start -->
-<div class="container-fluid py-5">
-    <div class="container py-5">
-        <h1 class="display-3 mb-5 wow fadeIn" data-wow-delay="0.1s">Latest From <span class="text-success">Our
-                Blog</span></h1>
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-6 col-xl-4">
-                <div class="blog-item wow fadeIn" data-wow-delay="0.1s">
-                    <div class="blog-img position-relative overflow-hidden">
-                        <img src="img/blog-1.jpg" class="img-fluid w-100" alt="">
-                        <div class="bg-success d-inline px-3 py-2 text-center text-white position-absolute top-0 end-0">
-                            01 Jan 2045</div>
-                    </div>
-                    <div class="p-4">
-                        <div class="blog-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted me-2">By
-                                        Admin</small></a>
-                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href="" class="text-muted me-2">12 Comments</small></a>
-                            </div>
-                            <div class="">
-                                <a href=""><i class="fas fa-bookmark text-muted"></i></a>
-                            </div>
-                        </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">Importance of “Piller” of Islam</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="btn btn-success px-3">More Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="blog-item wow fadeIn" data-wow-delay="0.3s">
-                    <div class="blog-img position-relative overflow-hidden">
-                        <img src="img/blog-2.jpg" class="img-fluid w-100" alt="">
-                        <div class="bg-success d-inline px-3 py-2 text-center text-white position-absolute top-0 end-0">
-                            01 Jan 2045</div>
-                    </div>
-                    <div class="p-4">
-                        <div class="blog-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted me-2">By
-                                        Admin</small></a>
-                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href="" class="text-muted me-2">12 Comments</small></a>
-                            </div>
-                            <div class="">
-                                <a href=""><i class="fas fa-bookmark text-muted"></i></a>
-                            </div>
-                        </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">How to get closer to Allah</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="btn btn-success px-3">More Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="blog-item wow fadeIn" data-wow-delay="0.5s">
-                    <div class="blog-img position-relative overflow-hidden">
-                        <img src="img/blog-3.jpg" class="img-fluid w-100" alt="">
-                        <div class="bg-success d-inline px-3 py-2 text-center text-white position-absolute top-0 end-0">
-                            01 Jan 2045</div>
-                    </div>
-                    <div class="p-4">
-                        <div class="blog-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted me-2">By
-                                        Admin</small></a>
-                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href="" class="text-muted me-2">12 Comments</small></a>
-                            </div>
-                            <div class="">
-                                <a href=""><i class="fas fa-bookmark text-muted"></i></a>
-                            </div>
-                        </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">Importance of Hajj in Islam</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="btn btn-success px-3">More Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Team Start -->
 <div class="container-fluid team py-5">
     <div class="container py-5">
@@ -491,79 +312,63 @@
         <div class="row g-5">
             <div class="col-lg-4 col-xl-5">
                 <div class="team-img wow zoomIn" data-wow-delay="0.1s">
-                    <img src="img/team-1.jpg" class="img-fluid" alt="">
+                    <img src="{{asset('assets/images/usman.png')}}" alt="image" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-8 col-xl-7">
                 <div class="team-item wow fadeIn" data-wow-delay="0.1s">
-                    <h1>Anamul Hasan</h1>
+                    <h1>Muhammad Usman</h1>
                     <h5 class="fw-normal fst-italic text-success mb-4">President</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. aliquip ex ea commodo
-                        consequat.</p>
+                    <p class="mb-4">"As the CEO of my Online Quran Academy, I'm deeply committed to providing a
+                        nurturing and inclusive online platform for students to explore and deepen their
+                        understanding of Islam. Beyond just teaching the Quran, my mission is to instill
+                        values that shape character, fostering a holistic approach to learning that goes
+                        beyond rote memorization. I firmly believe in the power of education to transform
+                        lives, and I'm constantly exploring innovative methods to ensure that learning
+                        remains accessible, interactive, and meaningful for all students, regardless of
+                        their backgrounds or circumstances. My goal is to empower individuals to not only
+                        acquire knowledge but also to apply it in their daily lives, promoting personal
+                        growth, empathy, and positive contributions to society."</p>
+                    <!-- Course Features -->
+                    <ul class="list-unstyled features">
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <strong>Since Working:</strong> 4 Years
+                        </li>
+                        <li>
+                            <i class="fas fa-user"></i>
+                            <strong>Current Joined Students:</strong> 23
+                        </li>
+                        <li>
+                            <i class="fas fa-user-check"></i>
+                            <strong>Total Certified Students:</strong> 79
+                        </li>
+                        <li>
+                            <i style="width: 5px; height: 5px;">
+                                <img src="{{ asset('assets/images/icons/rating.png') }}" alt="Icon">
+                            </i>
+                            <strong>Profile Rating:</strong>
+                            <span class="rating-stars">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                            </span>
+                            (4.5)
+                        </li>
+                    </ul>
                     <div class="team-icon d-flex pb-4 mb-4 border-bottom border-success">
-                        <a class="btn btn-success btn-lg-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-success btn-lg-square me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn btn-success btn-lg-square me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn btn-success btn-lg-square"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="team-item wow zoomIn" data-wow-delay="0.2s">
-                            <img src="img/team-2.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-content text-dark text-center py-3">
-                                <div class="team-content-inner">
-                                    <h5 class="mb-0">Mustafa Kamal</h5>
-                                    <p class="text-dark">Imam</p>
-                                    <div class="team-icon d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-twitter"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square me-2"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-item wow zoomIn" data-wow-delay="0.4s">
-                            <img src="img/team-3.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-content text-dark text-center py-3">
-                                <div class="team-content-inner">
-                                    <h5 class="mb-0">Nahiyan Momen</h5>
-                                    <p class="text-dark">Teacher</p>
-                                    <div class="team-icon d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-twitter"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square me-2"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-item wow zoomIn" data-wow-delay="0.6s">
-                            <img src="img/team-4.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-content text-dark text-center py-3">
-                                <div class="team-content-inner">
-                                    <h5 class="mb-0">Asfaque Ali</h5>
-                                    <p class="text-dark">Volunteer</p>
-                                    <div class="team-icon d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-success btn-sm-square me-2" href=""><i class="fab fa-twitter"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square me-2"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" class="btn btn-success btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="text-dark fw-bold fs-5">Follow Me:</span>
+                        <a class="btn-link px-2" href=""><i class="fab fa-facebook"></i></a>
+                        <a class="btn-link px-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn-link px-2" href=""><i class="fab fa-linkedin"></i></a>
+                        <a class="btn-link px-2" href=""><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <!-- Testiminial Start -->
@@ -577,7 +382,7 @@
             <div class="testimonial-item">
                 <div class="d-flex mb-3">
                     <div class="position-relative">
-                        <img src="img/testimonial-1.jpg" class="img-fluid" alt="">
+                        <img src="img/testimonial-1.jpg" alt="image">
                         <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
@@ -602,7 +407,7 @@
             <div class="testimonial-item">
                 <div class="d-flex mb-3">
                     <div class="position-relative">
-                        <img src="img/testimonial-2.jpg" class="img-fluid" alt="">
+                        <img src="img/testimonial-2.jpg" alt="image">
                         <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
@@ -627,7 +432,7 @@
             <div class="testimonial-item">
                 <div class="d-flex mb-3">
                     <div class="position-relative">
-                        <img src="img/testimonial-3.jpg" class="img-fluid" alt="">
+                        <img src="img/testimonial-3.jpg" alt="image">
                         <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
@@ -652,7 +457,7 @@
             <div class="testimonial-item">
                 <div class="d-flex mb-3">
                     <div class="position-relative">
-                        <img src="img/testimonial-4.jpg" class="img-fluid" alt="">
+                        <img src="img/testimonial-4.jpg" alt="image">
                         <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>

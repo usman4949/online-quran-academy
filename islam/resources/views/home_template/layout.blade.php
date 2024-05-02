@@ -1,16 +1,15 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 @include('home_template.head')
+
 <body>
+@include('home_template.navbar')
     <main>
-        <!-- Top Header -->
         @yield('main_content')
-        <!-- Footer Start -->
-        @if(!Request::is('signup'))
-            @include('home_template.footer')
-        @endif
-        <!--end footer-->
     </main>
+    @include('home_template.footer')
+
     @include('home_template.script')
 </body>
+
 </html>

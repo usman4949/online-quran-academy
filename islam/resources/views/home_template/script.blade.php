@@ -14,26 +14,40 @@
 <script src="assets/js/jquery.preloaders.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/lib/easing/easing.min.js"></script>
-<script src="assets/lib/waypoints/waypoints.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
 <!-- Login Modal Popup Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- **** Quran Reading Script **** -->
 <script>
     $(document).ready(function() {
-        $('#tab-register').click(function() {
-            if (!$(this).hasClass('active')) {
-                $(this).addClass('active bg-success'); // Adding bg-success class only if not already active
-                $('#tab-login').removeClass('active bg-success'); // Remove bg-success class from login
-                $('#pills-login').removeClass('show active');
-                $('#pills-register').addClass('show active');
-            }
-        });
-        $('#tab-login').click(function() {
-            if (!$(this).hasClass('active')) {
-                $(this).addClass('active bg-success');
-                $('#tab-register').removeClass('active bg-success'); // Remove bg-success class from register
-                $('#pills-register').removeClass('show active');
-                $('#pills-login').addClass('show active');
+        $.ajax({
+            url: 'https://api.alquran.cloud/v1/surah',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                if (data.code === 200) { // Check if the response code indicates success
+                    var surahs = data.data; // Extract the array of surahs
+                    var quranText = '<ul>'; // Start with an unordered list
+
+                    $.each(surahs, function(index, surah) {
+                        quranText += '<li><strong>' + surah.number + '</strong>: ' + surah.name + ' - ' + surah.englishNameTranslation + '</li>';
+                    });
+
+                    quranText += '</ul>'; // Close the unordered list
+
+                    $('#read_quran').html(quranText); // Insert the HTML into the read_quran element
+                } else {
+                    console.error('Error fetching Quran:', data.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching Quran:', error);
             }
         });
     });
 </script>
+
+
