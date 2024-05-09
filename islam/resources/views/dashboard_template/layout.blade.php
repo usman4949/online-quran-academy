@@ -3,6 +3,7 @@
 @include('dashboard_template.head')
 
 <body>
+@include('dashboard_template.sidebar')
     <main>
         @yield('main_content')
     </main>

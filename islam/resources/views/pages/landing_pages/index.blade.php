@@ -344,9 +344,6 @@
                             <strong>Total Certified Students:</strong> 79
                         </li>
                         <li>
-                            <i style="width: 5px; height: 5px;">
-                                <img src="{{ asset('assets/images/icons/rating.png') }}" alt="Icon">
-                            </i>
                             <strong>Profile Rating:</strong>
                             <span class="rating-stars">
                                 <i class="fas fa-star text-primary"></i>
@@ -382,7 +379,7 @@
             <div class="testimonial-item">
                 <div class="d-flex mb-3">
                     <div class="position-relative">
-                        <img src="img/testimonial-1.jpg" alt="image">
+                        <img src="{{ asset('assets/images/review/1.png') }}" alt="image">
                         <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
@@ -407,7 +404,7 @@
             <div class="testimonial-item">
                 <div class="d-flex mb-3">
                     <div class="position-relative">
-                        <img src="img/testimonial-2.jpg" alt="image">
+                        <img src="{{ asset('assets/images/review/2.png') }}" alt="image">
                         <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
@@ -432,7 +429,7 @@
             <div class="testimonial-item">
                 <div class="d-flex mb-3">
                     <div class="position-relative">
-                        <img src="img/testimonial-3.jpg" alt="image">
+                        <img src="{{ asset('assets/images/review/3.png') }}" alt="image">
                         <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>
@@ -457,7 +454,7 @@
             <div class="testimonial-item">
                 <div class="d-flex mb-3">
                     <div class="position-relative">
-                        <img src="img/testimonial-4.jpg" alt="image">
+                        <img src="{{ asset('assets/images/review/4.png') }}" alt="image">
                         <div class="btn-md-square bg-success rounded-circle position-absolute" style="top: 25px; left: -25px;">
                             <i class="fa fa-quote-left text-dark"></i>
                         </div>

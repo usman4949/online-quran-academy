@@ -36,9 +36,9 @@
                             <div class="card">
                                 <div class="card-body text-center" style="background-image: url('assets/images/background/testimonial-one_bg.png'); background-size: cover;">
                                     <div class="profile-img-container">
-                                        <img class="profile-img" src="https://picsum.photos/201" alt="card image">
+                                        <img class="profile-img" src="{{ asset('assets/images/review/1.png') }}" alt="card image">
                                     </div>
-                                    <h5 class="card-title">Mufti Farhan Ali Qadri Sarkar</h5>
+                                    <h5 class="card-title">Alemaa Fatima Sultana Sahiba</h5>
                                     <p class="card-text">This is basic card with image on top, title, description and button.</p>
                                     <div class="ratings text-primary">
                                         <i class="fa fa-star"></i>
@@ -92,7 +92,7 @@
                             <div class="card">
                                 <div class="card-body text-center" style="background-image: url('assets/images/background/testimonial-one_bg.png'); background-size: cover;">
                                     <div class="profile-img-container">
-                                        <img class="profile-img" src="https://picsum.photos/201" alt="card image">
+                                        <img class="profile-img" src="{{ asset('assets/images/review/2.png') }}" alt="card image">
                                     </div>
                                     <h5 class="card-title">Mufti Gulam Sarwar Saain</h5>
                                     <p class="card-text">This is basic card with image on top, title, description and button.</p>
@@ -148,9 +148,9 @@
                             <div class="card">
                                 <div class="card-body text-center" style="background-image: url('assets/images/background/testimonial-one_bg.png'); background-size: cover;">
                                     <div class="profile-img-container">
-                                        <img class="profile-img" src="https://picsum.photos/201" alt="card image">
+                                        <img class="profile-img" src="{{ asset('assets/images/review/3.png') }}" alt="card image">
                                     </div>
-                                    <h5 class="card-title">Mufti Tariq Masood Saain</h5>
+                                    <h5 class="card-title">Mufti Farhan Ali Qadri Sarkar</h5>
                                     <p class="card-text">This is basic card with image on top, title, description and button.</p>
                                     <div class="ratings text-primary">
                                         <i class="fa fa-star"></i>
@@ -203,7 +203,7 @@
                             <div class="card">
                                 <div class="card-body text-center" style="background-image: url('assets/images/background/testimonial-one_bg.png'); background-size: cover;">
                                     <div class="profile-img-container">
-                                        <img class="profile-img" src="https://picsum.photos/204" alt="card image">
+                                        <img class="profile-img" src="{{ asset('assets/images/review/4.png') }}" alt="card image">
                                     </div>
                                     <h5 class="card-title">Mufti Imran Habib Saain</h5>
                                     <p class="card-text">This is basic card with image on top, title, description and button.</p>
@@ -259,7 +259,7 @@
                             <div class="card">
                                 <div class="card-body text-center" style="background-image: url('assets/images/background/testimonial-one_bg.png'); background-size: cover;">
                                     <div class="profile-img-container">
-                                        <img class="profile-img" src="https://picsum.photos/213" alt="card image">
+                                        <img class="profile-img" src="{{ asset('assets/images/review/5.png') }}" alt="card image">
                                     </div>
                                     <h5 class="card-title">Mufti Furqan Khan Saain</h5>
                                     <p class="card-text">This is basic card with image on top, title, description and button.</p>
@@ -315,7 +315,7 @@
                             <div class="card">
                                 <div class="card-body text-center" style="background-image: url('assets/images/background/testimonial-one_bg.png'); background-size: cover;">
                                     <div class="profile-img-container">
-                                        <img class="profile-img" src="https://picsum.photos/206" alt="card image">
+                                        <img class="profile-img" src="{{ asset('assets/images/review/6.png') }}" alt="card image">
                                     </div>
                                     <h5 class="card-title">Muhammad Usman Sajjad Bubber</h5>
                                     <p class="card-text">This is basic card with image on top, title, description and button.</p>

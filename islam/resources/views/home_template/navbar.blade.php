@@ -22,7 +22,7 @@
                         <a class="btn-link px-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn-link px-2" href=""><i class="fab fa-linkedin"></i></a>
                         <a class="btn-link px-2" href=""><i class="fab fa-instagram"></i></a>
-                        <a href="{{ route('signup') }}" class="text-dark ps-4"><i class="fa fa-lock me-1"></i> User login</a>
+                        <a href="{{ route('login') }}" class="text-dark ps-4"><i class="fa fa-lock me-1"></i> User login</a>
                     </div>
                 </div>
             </div>

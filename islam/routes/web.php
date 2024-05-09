@@ -22,6 +22,7 @@ Route::post('/signup', [AuthController::class, 'signup']);
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard');
     Route::get('/user_profile', [UserController::class, 'user_profile'])->name('user_profile');
+    Route::get('/user_registeration', [UserController::class, 'user_registeration'])->name('user_registeration');
 
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 });

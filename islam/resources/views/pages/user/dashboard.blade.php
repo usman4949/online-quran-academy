@@ -188,125 +188,6 @@
 
 </header><!-- End Header -->
 
-<!-- ======= Sidebar ======= -->
-<aside id="sidebar" class="sidebar">
-
-    <ul class="sidebar-nav" id="sidebar-nav">
-
-        <!-- Dashboard Nav -->
-        <li class="nav-item">
-            <a class="nav-link " href="{{url('/dashboard')}}">
-                <i class="bi bi-grid"></i>
-                <span>Dashboard</span>
-            </a>
-        </li>
-        <!-- End Dashboard Nav -->
-
-        <!-- Profile Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-person"></i><span>Profile</span><i class="bi bi-chevron-down ms-auto"></i>
-            </a>
-            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                <li>
-                    <a href="{{url('user_profile')}}">
-                        <i class="bi bi-person" style="font-size: 0.8rem;"></i><span>My Profile</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="tables-data.html">
-                        <i class="bi bi-gear" style="font-size: 0.8rem;"></i><span>Change Password</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <!-- End Profile Nav -->
-
-        <!-- Attendance Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
-                <i class="bi bi-check-square"></i>
-                <span>Attendance</span>
-            </a>
-        </li>
-        <!-- End Attendance Nav -->
-
-        <!-- Registration Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
-                <i class="bi bi-pencil-square"></i>
-                <span>Registration</span>
-            </a>
-        </li>
-        <!-- End Registration Nav -->
-
-        <!-- Current Course Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
-                <i class="bi bi-book"></i>
-                <span>Current Course</span>
-            </a>
-        </li>
-        <!-- End Current Course Nav -->
-
-        <!-- Teachers Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
-                <i class="bi bi-person"></i>
-                <span>Teachers</span>
-            </a>
-        </li>
-        <!-- End Teachers Nav -->
-
-        <!-- Contact Us Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
-                <i class="bi bi-envelope"></i>
-                <span>Contact Us</span>
-            </a>
-        </li>
-        <!-- End Contact Us Nav -->
-
-        <!-- Payment Method Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
-                <i class="bi bi-credit-card"></i>
-                <span>Payment Method</span>
-            </a>
-        </li>
-        <!-- End Payment Method Nav -->
-
-        <!-- Need Help Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-            </a>
-        </li>
-        <!-- End Need Help Nav -->
-
-        <!-- Donation Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
-                <i class="bi bi-heart"></i>
-                <span>Donation</span>
-            </a>
-        </li>
-        <!-- End Donation Nav -->
-
-        <!-- Logout Nav -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('/logout') }}">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Logout</span>
-            </a>
-        </li>
-        <!-- End Logout Nav -->
-
-    </ul>
-
-</aside>
-<!-- End Sidebar-->
 
 <main id="main" class="main">
 
@@ -348,12 +229,14 @@
                                 <h5 class="card-title">Sales <span>| Today</span></h5>
 
                                 <div class="d-flex align-items-center">
-                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <div
+                                        class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                                         <i class="bi bi-cart"></i>
                                     </div>
                                     <div class="ps-3">
                                         <h6>145</h6>
-                                        <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                                        <span class="text-success small pt-1 fw-bold">12%</span> <span
+                                            class="text-muted small pt-2 ps-1">increase</span>
 
                                     </div>
                                 </div>
@@ -383,12 +266,14 @@
                                 <h5 class="card-title">Revenue <span>| This Month</span></h5>
 
                                 <div class="d-flex align-items-center">
-                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <div
+                                        class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                                         <i class="bi bi-currency-dollar"></i>
                                     </div>
                                     <div class="ps-3">
                                         <h6>$3,264</h6>
-                                        <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                                        <span class="text-success small pt-1 fw-bold">8%</span> <span
+                                            class="text-muted small pt-2 ps-1">increase</span>
 
                                     </div>
                                 </div>
@@ -419,12 +304,14 @@
                                 <h5 class="card-title">Customers <span>| This Year</span></h5>
 
                                 <div class="d-flex align-items-center">
-                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <div
+                                        class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                                         <i class="bi bi-people"></i>
                                     </div>
                                     <div class="ps-3">
                                         <h6>1244</h6>
-                                        <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
+                                        <span class="text-danger small pt-1 fw-bold">12%</span> <span
+                                            class="text-muted small pt-2 ps-1">decrease</span>
 
                                     </div>
                                 </div>
@@ -458,56 +345,63 @@
                                 <div id="reportsChart"></div>
 
                                 <script>
-                                    document.addEventListener("DOMContentLoaded", () => {
-                                        new ApexCharts(document.querySelector("#reportsChart"), {
-                                            series: [{
-                                                name: 'Sales',
-                                                data: [31, 40, 28, 51, 42, 82, 56],
-                                            }, {
-                                                name: 'Revenue',
-                                                data: [11, 32, 45, 32, 34, 52, 41]
-                                            }, {
-                                                name: 'Customers',
-                                                data: [15, 11, 32, 18, 9, 24, 11]
-                                            }],
-                                            chart: {
-                                                height: 350,
-                                                type: 'area',
-                                                toolbar: {
-                                                    show: false
-                                                },
+                                document.addEventListener("DOMContentLoaded", () => {
+                                    new ApexCharts(document.querySelector("#reportsChart"), {
+                                        series: [{
+                                            name: 'Sales',
+                                            data: [31, 40, 28, 51, 42, 82, 56],
+                                        }, {
+                                            name: 'Revenue',
+                                            data: [11, 32, 45, 32, 34, 52, 41]
+                                        }, {
+                                            name: 'Customers',
+                                            data: [15, 11, 32, 18, 9, 24, 11]
+                                        }],
+                                        chart: {
+                                            height: 350,
+                                            type: 'area',
+                                            toolbar: {
+                                                show: false
                                             },
-                                            markers: {
-                                                size: 4
-                                            },
-                                            colors: ['#4154f1', '#2eca6a', '#ff771d'],
-                                            fill: {
-                                                type: "gradient",
-                                                gradient: {
-                                                    shadeIntensity: 1,
-                                                    opacityFrom: 0.3,
-                                                    opacityTo: 0.4,
-                                                    stops: [0, 90, 100]
-                                                }
-                                            },
-                                            dataLabels: {
-                                                enabled: false
-                                            },
-                                            stroke: {
-                                                curve: 'smooth',
-                                                width: 2
-                                            },
-                                            xaxis: {
-                                                type: 'datetime',
-                                                categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-                                            },
-                                            tooltip: {
-                                                x: {
-                                                    format: 'dd/MM/yy HH:mm'
-                                                },
+                                        },
+                                        markers: {
+                                            size: 4
+                                        },
+                                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                                        fill: {
+                                            type: "gradient",
+                                            gradient: {
+                                                shadeIntensity: 1,
+                                                opacityFrom: 0.3,
+                                                opacityTo: 0.4,
+                                                stops: [0, 90, 100]
                                             }
-                                        }).render();
-                                    });
+                                        },
+                                        dataLabels: {
+                                            enabled: false
+                                        },
+                                        stroke: {
+                                            curve: 'smooth',
+                                            width: 2
+                                        },
+                                        xaxis: {
+                                            type: 'datetime',
+                                            categories: ["2018-09-19T00:00:00.000Z",
+                                                "2018-09-19T01:30:00.000Z",
+                                                "2018-09-19T02:30:00.000Z",
+                                                "2018-09-19T03:30:00.000Z",
+                                                "2018-09-19T04:30:00.000Z",
+                                                "2018-09-19T05:30:00.000Z",
+                                                "2018-09-19T06:30:00.000Z"
+                                            ]
+                                        },
+                                        tooltip: {
+                                            x: {
+                                                format: 'dd/MM/yy HH:mm'
+                                            },
+                                        }
+                                    }).render();
+                                });
                                 </script>
                                 <!-- End Line Chart -->
 
@@ -557,7 +451,8 @@
                                         <tr>
                                             <th scope="row"><a href="#">#2147</a></th>
                                             <td>Bridie Kessler</td>
-                                            <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
+                                            <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a>
+                                            </td>
                                             <td>$47</td>
                                             <td><span class="badge bg-warning">Pending</span></td>
                                         </tr>
@@ -644,7 +539,8 @@
                                 <div class="activite-label">1 day</div>
                                 <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
                                 <div class="activity-content">
-                                    Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
+                                    Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a>
+                                    tempore
                                 </div>
                             </div><!-- End activity item-->
 
