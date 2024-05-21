@@ -13,6 +13,12 @@ Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/read_quran', [HomeController::class, 'read_quran'])->name('read_quran');
 Route::get('/cources', [HomeController::class, 'cources'])->name('cources');
 Route::get('/teachers', [HomeController::class, 'teachers'])->name('teachers');
+Route::get('/service1', [HomeController::class, 'service1'])->name('service1');
+Route::get('/service2', [HomeController::class, 'service2'])->name('service2');
+Route::get('/service3', [HomeController::class, 'service3'])->name('service3');
+Route::get('/service4', [HomeController::class, 'service4'])->name('service4');
+Route::get('/service5', [HomeController::class, 'service5'])->name('service5');
+Route::get('/service6', [HomeController::class, 'service6'])->name('service6');
 
 // *** Auth Routes ***
 Route::post('/login', [AuthController::class, 'login']);
@@ -23,6 +29,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard');
     Route::get('/user_profile', [UserController::class, 'user_profile'])->name('user_profile');
     Route::get('/user_registeration', [UserController::class, 'user_registeration'])->name('user_registeration');
-
+    Route::post('/store_registeration', [UserController::class, 'store_registeration'])->name('store_registeration');
+    Route::get('registration_detail/{id}', [UserController::class, 'registration_detail'])->name('registration_detail');
+    
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 });

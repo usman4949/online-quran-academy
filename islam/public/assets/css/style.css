@@ -1,3 +1,8 @@
+.mission {
+    background: url("../images/background/service-bg.png");
+    background-size: contain;
+}
+
 .features li {
     margin-bottom: 10px;
     font-size: 16px;
@@ -8,7 +13,6 @@
 .features li i {
     margin-right: 8px;
     color: #0b490e;
-    /* Adjust icon color as needed */
 }
 
 .features li strong {
@@ -17,7 +21,6 @@
 
 .rating-stars {
     color: #fdd835;
-    /* Color for stars */
 }
 
 .rating-stars .fas {
@@ -578,8 +581,76 @@ h6,
     font-size: 18px;
 }
 
-/*** Hero Header ***/
+/*** Hero Header for cources***/
+.hero-cources {
+    margin-bottom: 6rem;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    background: url("../images/cources.jpg") center center no-repeat;
+    background-size: cover;
+}
 
+.hero-cources .hero-cources-inner {
+    padding: 3rem;
+    background: rgba(255, 255, 255, .5);
+}
+
+@media (max-width: 992px) {
+    .hero-cources {
+        padding-top: 12rem;
+    }
+}
+
+.hero-cources .breadcrumb-item {
+    font-size: 18px;
+}
+
+/*** Hero Header for teachers***/
+.hero-teacher {
+    margin-bottom: 6rem;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    background: url("../images/teacher.png") center center no-repeat;
+    background-size: cover;
+}
+
+.hero-teacher .hero-teacher-inner {
+    padding: 3rem;
+    background: rgba(255, 255, 255, .5);
+}
+
+@media (max-width: 992px) {
+    .hero-teacher {
+        padding-top: 12rem;
+    }
+}
+
+.hero-teacher .breadcrumb-item {
+    font-size: 18px;
+}
+/*** Hero Header for contact***/
+.hero-contact {
+    margin-bottom: 6rem;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    background: url("../images/contact.png") center center no-repeat;
+    background-size: cover;
+}
+
+.hero-contact .hero-contact-inner {
+    padding: 3rem;
+    background: rgba(255, 255, 255, .5);
+}
+
+@media (max-width: 992px) {
+    .hero-contact {
+        padding-top: 12rem;
+    }
+}
+
+.hero-contact .breadcrumb-item {
+    font-size: 18px;
+}
 /*** About Start ***/
 .about a.btn.btn-light:hover {
     background: var(--bs-dark) !important;

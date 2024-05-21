@@ -12,6 +12,19 @@ body {
   outline: 0;
   box-shadow: 0 0 10px rgba(106, 153, 114, 0.6);
 }
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+}
+
+.custom-file-upload:hover {
+  background-color: #f5f5f5;
+}
 
 .form-control {
   display: block;

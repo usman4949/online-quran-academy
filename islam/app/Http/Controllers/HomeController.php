@@ -34,4 +34,28 @@ class HomeController extends Controller
     {
         return view('pages/landing_pages/contact');
     }
+    public function service1()
+    {
+        return view('pages/services/service1');
+    }
+    public function service2()
+    {
+        return view('pages/services/service2');
+    }
+    public function service3()
+    {
+        return view('pages/services/service3');
+    }
+    public function service4()
+    {
+        return view('pages/services/service4');
+    }
+    public function service5()
+    {
+        return view('pages/services/service5');
+    }
+    public function service6()
+    {
+        return view('pages/services/service6');
+    }
 }
